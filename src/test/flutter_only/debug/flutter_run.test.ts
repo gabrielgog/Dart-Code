@@ -674,7 +674,7 @@ import { activate, defer, delay, ext, extApi, fileSafeCurrentTestName, flutterHe
 			]);
 		});
 
-		it("correctly marks debuggable external library frames when debugExternalLibraries is true", async () => {
+		it("correctly marks debuggable external library frames when debugExternalLibraries is true", async function () {
 			if (deviceId === "chrome")
 				this.skip();
 
