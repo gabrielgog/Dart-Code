@@ -1,5 +1,7 @@
 console.log("Starting test runner...");
 
+import wtf = require("wtfnode");
+
 import * as fs from "fs";
 import * as glob from "glob";
 import * as Mocha from "mocha";
@@ -53,9 +55,13 @@ module.exports = {
 
 			try {
 				// Run the mocha test
-				mocha.run((failures) => cb(null, failures));
+				mocha.run((failures) => {
+					cb(null, failures);
+					wtf.dump();
+				});
 			} catch (err) {
 				cb(err);
+				wtf.dump();
 			}
 		});
 	},

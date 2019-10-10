@@ -1672,7 +1672,8 @@
 		"semver": "^6.3.0",
 		"vscode-debugadapter": "^1.36.1",
 		"vscode-debugprotocol": "^1.36.0",
-		"ws": "^7.1.2"
+		"ws": "^7.1.2",
+		"wtfnode": "^0.8.0"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
@@ -1683,6 +1684,7 @@
 		"@types/sinon": "5.0.5",
 		"@types/vscode": "^1.38.0",
 		"@types/ws": "^6.0.3",
+		"@types/wtfnode": "^0.7.0",
 		"glob": "^7.1.4",
 		"istanbul-instrumenter-loader": "^3.0.1",
 		"mocha": "^5.2.0",
